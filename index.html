@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./music-player.css" />
+    <title>Loong's Music</title>
+  </head>
+  <body>
+    <div class="player">
+      <div class="dashboard">
+        <p>Đang phát :</p>
+        <!-- album cover -->
+        <div class="album-cover">
+          <div class="music-icon">🎵</div>
+        </div>
+        <!-- MusicName -->
+        <header>
+          <h2 class="title-music">Music Name</h2>
+          <h4 class="singer">Singer</h4>
+        </header>
+        <!-- Progress -->
+        <div class="progress-music">
+          <div class="progress-bar">
+            <div class="progress-play"></div>
+          </div>
+          <div class="time-info">
+            <div class="current-time">0:00</div>
+            <div class="total-time">0:00</div>
+          </div>
+        </div>
+
+        <!-- controls -->
+        <div class="controls">
+          <div class="btn btn-repeat">
+            <i class="fas fa-redo"></i>
+          </div>
+          <div class="btn btn-prev">
+            <i class="fas fa-step-backward"></i>
+          </div>
+          <div class="btn btn-toggle-play">
+            <!-- <i class="fas fa-pause icon-pause"></i> -->
+            <i id="play-icon" class="fas fa-play icon-play"></i>
+          </div>
+          <div class="btn btn-next">
+            <i class="fas fa-step-forward"></i>
+          </div>
+          <div class="btn btn-random">
+            <i class="fas fa-random"></i>
+          </div>
+        </div>
+
+        <audio id="audio" src=""></audio>
+      </div>
+      <!-- Playlist -->
+      <div class="playlist">
+        <div class="playlist-title">Playlist</div>
+        <div class="playlist-items">
+          <div class="playlist-item">
+            <div class="playlist-item-number">1</div>
+            <div class="playlist-item-info">
+              <div class="playlist-item-title">Bui Thanh Long</div>
+              <div class="playlist-item-artist">Singer</div>
+            </div>
+            <div class="playlist-item-duration">6:12</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./music-player.js"></script>
+  </body>
+</html>
