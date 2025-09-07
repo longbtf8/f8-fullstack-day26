@@ -24,7 +24,7 @@ const musicPlayer = {
       path: "./music/Còn Gì Đẹp Hơn (Mưa Đỏ Original Soundtrack).mp3",
       artist: "Nguyễn Hùng",
       imgCover: "./img/congidephon.jpg",
-      duration: "4:41",
+      duration: "4:42",
     },
     {
       id: 2,
