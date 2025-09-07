@@ -296,6 +296,15 @@ const musicPlayer = {
     this.audioElement.addEventListener("timeupdate", () => {
       this.UpdateProgress();
     });
+    this.progressBar.addEventListener("touchstart", (e) => {
+      this.handleDown(e);
+    });
+    document.addEventListener("touchend", (e) => {
+      this.handleUp(e);
+    });
+    document.addEventListener("touchmove", (e) => {
+      this.handleMove(e);
+    });
     this.progressBar.addEventListener("mousedown", (e) => {
       this.handleDown(e);
     });
